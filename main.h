@@ -13,5 +13,6 @@ void(*func)(va_list;
 }
 
 int _putchar(char c);
+int print_int(va_list args, char *buffer)
 
 #endif
