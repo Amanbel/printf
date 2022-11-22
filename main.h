@@ -18,6 +18,7 @@ int print_upper_hex(va_list types, char buffer[],
 int print_non_printable(va_list types, char buffer[],
 	int flags, int width, int precision, int size);
 int get_flags(const char *format, int *i);
+int get_width(const char *format, int *i, va_list list);
 
 /**
  * struct pnt - a structure holding a character and a pointer to function
