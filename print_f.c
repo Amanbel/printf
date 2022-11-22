@@ -43,7 +43,7 @@ int _printf(const char *format, ...)
 				key = 0;
 				continue;
 			}
-			putchar(ptr[i]);
+			_putchar(ptr[i]);
 		}
 	}
 	va_end(args);
