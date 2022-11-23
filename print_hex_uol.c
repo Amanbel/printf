@@ -13,7 +13,7 @@
  * Return: num of chars
  */
 
-int print_hex(va_list types, char map_to[], char buffer[],
+int print_hexa(va_list types, char map_to[], char buffer[],
 		int flags, char flag_ch, int width, int precision, int size)
 {
 	int i = BUFF_SIZE - 2;
@@ -22,7 +22,7 @@ int print_hex(va_list types, char map_to[], char buffer[],
 
 	UNUSED(width);
 
-	num = convert_size_unsigned(num, size);
+	num = convert_size_unsgnd(num, size);
 
 	if (num == 0)
 		buffer[i--] = '0';
@@ -41,5 +41,5 @@ int print_hex(va_list types, char map_to[], char buffer[],
 
 	i++;
 
-	return (write_unsigned(0, i, buffer, flags, width, precision, size));
+	return (write_unsgnd(0, i, buffer, flags, width, precision, size));
 }

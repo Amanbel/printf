@@ -109,6 +109,8 @@ int write_unsgnd(int is_negative, int ind,
 int is_printable(char);
 int append_hexa_code(char, char[], int);
 int is_digit(char);
+/**print_buffer**/
+void print_buffer(char buffer[], int *buff_ind);
 
 long int convert_size_number(long int num, int size);
 long int convert_size_unsgnd(unsigned long int num, int size);
