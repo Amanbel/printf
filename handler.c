@@ -10,7 +10,7 @@
  * @width: get_width
  * @precision: precision specifier
  * @size: size specifier
- * Return 1 or 2
+ * Return: 1 or 2
  */
 
 int handle_print(const char *fmt, int *ind, va_list list,
